@@ -251,7 +251,7 @@ families and against real agent traffic from one deployment. What is not yet tru
 
 ## Reference deployment
 
-agentnorm was extracted from [Sentinel](https://github.com/kaustubhspatil/sentinel), an agentic IT-operations platform
+agentnorm was extracted from [Sentinel](../../README.md), an agentic IT-operations platform
 running on a live multi-cloud estate. Sentinel is where these numbers come from, and where
 agentnorm found a real cross-tenant disclosure in Sentinel's own agent — a run scoped to one
 tenant returning another tenant's host and package data, because `tenant` was a parameter
