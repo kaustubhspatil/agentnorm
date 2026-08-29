@@ -26,9 +26,9 @@ classifiers = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/kaustubhspatil/sentinel/tree/main/packages/agentnorm"
-Repository = "https://github.com/kaustubhspatil/sentinel"
-Issues = "https://github.com/kaustubhspatil/sentinel/issues"
+Homepage = "https://github.com/kaustubhspatil/agentnorm"
+Repository = "https://github.com/kaustubhspatil/agentnorm"
+Issues = "https://github.com/kaustubhspatil/agentnorm/issues"
 "Reference deployment" = "https://github.com/kaustubhspatil/sentinel"
 
 [project.optional-dependencies]
