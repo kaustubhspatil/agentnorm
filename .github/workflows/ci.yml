@@ -13,7 +13,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        # The package claims >=3.10 and zero dependencies. Both are only true if tested.
+        # test the full supported python range with no extra deps
         python-version: ["3.10", "3.11", "3.12", "3.13"]
     steps:
       - uses: actions/checkout@v4
@@ -34,6 +34,5 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-      # Lazy imports inside functions are how optional adapters work and are allowed;
-      # a module-scope third-party import is not.
+      # lazy imports inside functions are ok, module-level third-party imports aren't
       - run: python tools/check_zero_deps.py
